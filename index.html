@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geld</title>
+    <link rel="shortcut icon" href="img\GELD.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo-place"><a href="" class="logo-place">GELD</a></li>
+                <li class="nav-item"><a href="">Adicionar compra</a></li>
+                <li class="nav-item"><a href="">Faturas</a></li>
+                <li class="nav-item"><a href="">Importar csv</a></li>
+                <li class="nav-item"><a href="">Exportar relatório</a></li>
+                <li class="nav-item"><a href="">Configurações</a></li>
+                <li class="nav-item"><a href="">Easter Egg</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form id="register-order-form" onsubmit="setAction(this)">
+            <p>Adicione uma compra</p>
+            <div class="form-control">
+              <input
+                type="text"
+                id="desc-input"
+                placeholder="Descrição da compra"
+              />
+            </div>
+            <div class="form-control">
+                <input
+                  type="text"
+                  id="parcelas-input"
+                  placeholder="Numero de parcelas"
+                />
+            </div>
+            <div class="form-control">
+                <input
+                  type="text"
+                  id="valor-input"
+                  placeholder="Valor da compra"
+                />
+            </div>
+            <button type="button" class="sub-btn" onclick="setAction(this)">Criar</button>
+            <button type="button" class="clean-btn" onclick="cleanForm(this)">Limpar</button>
+          </form>
+    </section>
+</body>
+</html>
