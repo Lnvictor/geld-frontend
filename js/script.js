@@ -19,11 +19,13 @@ function registerOrder(desc, installments, value) {
     	createdAt: "2023-08-30T21:18:02.746+00:00",
         updatedAt: "2023-08-30T21:18:02.746+00:00" 
     };
-    console.log(registerOrderUrl)
-    console.log(requestData);
+
+    // DEBUG
+    // console.log(registerOrderUrl)
+    // console.log(requestData);
+    
     fetch(registerOrderUrl, { 
-        mode: "no-cors",
-        method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': '*' }, 
+        method: 'POST', headers: { 'Content-Type': 'application/json', 'Origin': '*'}, 
         body: JSON.stringify(requestData) })
         .then(response => console.log(response.json()))
         .then(data => console.log(data))
